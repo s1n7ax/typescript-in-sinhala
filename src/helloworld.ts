@@ -1,9 +1,9 @@
-export default class Main {
-	static applicationName: string = 'Demo';
+class Main {
+	static applicationName: string = 'Hello World';
 
-	static printApplicationName() {
+	static printName() {
 		console.log(Main.applicationName);
 	}
 }
 
-Main.printApplicationName();
+Main.printName();
