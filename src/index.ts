@@ -1,26 +1,29 @@
-const printName = function (name: string): void {
-    console.log(name);
-};
-
-class Cat {
-    static className = 'Cat';
+interface Student {
     name: string;
+    address: string;
+    contact: number[];
+}
 
-    constructor(name: string) {
-        this.name = name;
+class StudentManager {
+    static students: Student[] = [];
+
+    static addStudent(student: Student) {
+        StudentManager.students.push(student);
     }
 
-    static printClassName() {
-        console.log(Cat.className);
-    }
-
-    printName() {
-        console.log(this.name);
+    static printAll() {
+        StudentManager.students.forEach((e) => console.log(e));
     }
 }
 
-printName('Srinesh');
-
-const c = new Cat('garfield');
-c.printName();
-Cat.printClassName();
+StudentManager.addStudent({
+    name: 'srinesh',
+    address: '',
+    contact: [1111111],
+});
+StudentManager.addStudent({
+    name: 'nisala',
+    address: '',
+    contact: [],
+});
+StudentManager.printAll();

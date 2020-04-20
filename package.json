@@ -1,22 +1,24 @@
 {
-	"name": "typescript-in-sinhala",
-	"version": "1.0.0",
-	"main": "index.js",
-	"repository": "https://github.com/s1n7ax/typescript-in-sinhala.git",
-	"author": "s1n7ax <srineshnisala@gmail.com>",
-	"license": "MIT",
-	"scripts": {
-		"tsc": "tsc",
-		"webpack": "webpack",
-		"tslint": "tslint --project tsconfig.json",
-		"prettier": "prettier --write 'src/**/*.ts'"
-	},
-	"dependencies": {
-		"prettier": "^2.0.4",
-		"ts-loader": "^6.2.2",
-		"tslint": "^6.1.1",
-		"typescript": "^3.8.3",
-		"webpack": "^4.42.1",
-		"webpack-cli": "^3.3.11"
-	}
+    "name": "typescript-in-sinhala",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/s1n7ax/typescript-in-sinhala.git",
+    "author": "s1n7ax <srineshnisala@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "tsc": "tsc",
+        "webpack": "webpack",
+        "watch": "webpack --watch",
+        "exe": "node dist/main.js",
+        "tslint": "tslint --project tsconfig.json",
+        "prettier": "prettier --write 'src/**/*.ts'"
+    },
+    "dependencies": {
+        "prettier": "^2.0.4",
+        "ts-loader": "^6.2.2",
+        "tslint": "^6.1.1",
+        "typescript": "^3.8.3",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11"
+    }
 }
