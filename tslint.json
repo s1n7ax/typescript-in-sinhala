@@ -5,7 +5,8 @@
     "rules": {
         "no-console": false,
         "array-type": false,
-        "max-classes-per-file": false
+        "max-classes-per-file": false,
+        "no-angle-bracket-type-assertion": false
     },
     "rulesDirectory": []
 }
